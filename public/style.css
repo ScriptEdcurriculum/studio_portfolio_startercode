@@ -7,8 +7,8 @@ body {
     background-color: purple;
 }
 
-a {
-    padding-right: 20px;
+.navbar-header {
+    padding-right: 20%;
 }
 
 
