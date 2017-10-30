@@ -7,8 +7,12 @@ body {
     background-color: purple;
 }
 
+.navbar>.container-fluid .navbar-brand {
+    margin-left: 25px;
+}
+
 .navbar-header {
-    padding-right: 20%;
+    padding-left: 70%;
 }
 
 
