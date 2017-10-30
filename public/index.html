@@ -54,7 +54,16 @@
     messagingSenderId: "130462829578"
   };
   firebase.initializeApp(config);
-</script>    
+  
+  var database = firebase.database();
+    var projects_ref = database.ref('/projects');
+
+    projects_ref.once('value', function(snapshot) {
+	var projects = snapshot.val();
+	console.log(projects);
+});
+</script>  
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
