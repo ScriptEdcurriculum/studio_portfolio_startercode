@@ -10,10 +10,39 @@
 
 <body>
   <section id="nav-heading">
-
+<div class="container">
+    <div class="row">
+	
+        
+   <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-3">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-3">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#profile-sec">Home</a></li>
+            <li><a href="#project-sec">Projects</a></li>
+            <li><a href="#contact-sec">Contact</a></li>
+            <li class="s-icon">
+              <a href="#" id="addClass"><span class="glyphicon glyphicon-search"></span></a>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+        
   </section>
 
-    <section id= profile-sec>
+    <section id= "profile-sec">
     <div class="container">
       <div class="span3 well">
         <center>
@@ -28,12 +57,12 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-          <h4 class="modal-title" id="myModalLabel">More About Joe</h4>
+          <h4 class="modal-title" id="myModalLabel">More About Andrea</h4>
         </div>
         <div class="modal-body">
           <center>
             <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
-            <h3 class="media-heading">Joe Sixpack <small>USA</small></h3>
+            <h3 class="media-heading">Andrea Cajamarca</h3>
             <span><strong>Skills: </strong></span>
             <span class="label label-warning">HTML</span>
             <span class="label label-info">CSS</span>
@@ -49,7 +78,7 @@
         </div>
             <div class="modal-footer">
               <center>
-                <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about Joe</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about you!</button>
               </center>
             </div>
           </div>
@@ -68,17 +97,26 @@
     
   </section>
 
-  <section id="about-sec">
-
-  </section>
-
   <section id="contact-sec">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    			<div class="col-md-12">
+                    <ul class="social-network social-circle">
+                        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>				
+				</div>
 
   </section>
 
   <section id="foot-sec">
 
   </section>
+  
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
   <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
