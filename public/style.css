@@ -11,6 +11,10 @@ body {
     padding-left: 70%;
 }
 
+.nav-sec {
+	background-color: #000;
+}
+
 
 
 /*=========================
@@ -97,6 +101,17 @@ a.socialIcon:hover, .socialHoverClass {
 
 a {
  background-color: #D3D3D3;   
+}
+
+.img-project {
+    position: relative;
+    float: left;
+    padding: 100px;
+    width:  200px;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
 }
 
 /* Header CSS */
