@@ -1,34 +1,161 @@
-<!-- 
-        1.1 Wireframe your project
-        1.2 Fork and clone the repo and set up your project workspace
-        2.1 Link your files in the head of the docment Add a Nav Bar to your site - It should have three links (Portfolio, About, and Contact) 
-        2.2 Add a div for each section. Within section add a contatiner div with the appropriate number of rows and columns 
-        3.1 Add thumbnails and other custom component (button, modal, font) using bootstrap Documentation 
-        3.2 Add CSS and add your site to gh-pages 
--->
-
 <!DOCTYPE html>
-<head>   
+
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="style.css" type="text/css" />
 
 </head>
 
 <body>
-    <!-- Nav Bar -->
+  <section id="nav-heading">
+<div class="container">
+    <div class="row">
+	
+        
+   <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-3">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
     
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-3">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-sec"><a href="#profile-sec">Home</a></li>
+            <li class="nav-sec"><a href="#project-sec">Projects</a></li>
+            <li class="nav-sec"><a href="#contact-sec">Contact</a></li>
+            <li class="s-icon">
+              <a href="#" id="addClass"><span class="glyphicon glyphicon-search"></span></a>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+        
+  </section>
+
+    <section id= "profile-sec">
+    <div class="container">
+      <div class="span3 well">
+        <center>
+          <a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="andreac01.jpg" transform= "rotate(25deg)" width="140" height="140" class="img-circle"></a>
+          <h3>Andrea Cajamarca</h3>
+          <em>Click on Icon for Bio!</em>
+        </center>
+      </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+          <h4 class="modal-title" id="myModalLabel">More About Andrea</h4>
+        </div>
+        <div class="modal-body">
+          <center>
+            <img src="andreac01.jpg" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+            <h3 class="media-heading">Andrea Cajamarca</h3>
+            <span><strong>Skills: </strong></span>
+            <span class="label label-warning">HTML</span>
+            <span class="label label-info">CSS</span>
+            <span class="label label-info">Javascript</span>
+            <span class="label label-success">C#</span>
+            <span class="label label-warning">jQuery</span>
+          </center>
+          <hr>
+          <center>
+            <p class="text-left"><strong>Bio: </strong><br> Rising high school senior, graduating class of 2018! Enrolling in Manhattan College for Fall and Spring semester. Undecided major, but leaning towards Computer Science and Game Development!</p>
+            <br>
+          </center>
+        </div>
+            <div class="modal-footer">
+              <center>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id= "project-sec">
+    <div class="container">
+      <h1>Projects</h1> 
+      <div class="projects">
+        <div class="img-project" style="background-image:url('helphub.png');" a href= "https://github.com/Andrea-Cajamarca/help-hub"></div></a>
+        <div class="img-project" style="background-image:url('i-find.png');" a href= "https://github.com/Andrea-Cajamarca/i-find"></div></a>
+        <div class="img-project" style="background-image:url('snake-eater-game.png');" a href= "https://github.com/Andrea-Cajamarca/snake-eater-game"></div></a>      </div>
+    </div>
     
-    <!-- Header -->
+  </section>
+
+  <section id="contact-sec">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    			<div class="col-md-12">
+                    <ul class="social-network social-circle">
+                        <li><a href="https://www.facebook.com/andrea.cajamarca.507" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://plus.google.com/u/2/114970565701605984891" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/andrea-c-67631b125/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>				
+				</div>
+
+  </section>
+
+  <section id="foot-sec">
+
+  </section>
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <script>
+  function projectClick(){
+   $(".img-project").click() 
+  }
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDEaBmLTCQfEF4igegFIEbzAFUEHu7WT0Q",
+      authDomain: "andrea-s-portfolio-b35dc.firebaseapp.com",
+      databaseURL: "https://andrea-s-portfolio-b35dc.firebaseio.com",
+      projectId: "andrea-s-portfolio-b35dc",
+      storageBucket: "",
+      messagingSenderId: "130462829578"
+    };
+    firebase.initializeApp(config);
+
+    var database = firebase.database();
+    var projects_ref = database.ref('/projects');
+
+    projects_ref.once('value', function(snapshot) {
+      var projects = snapshot.val();
+      console.log(projects);
+      for (var i in projects) {
+        var div = $('<div>');
+        var title = $('<h1>');
+        var image = $('<img>');
+        image.attr("src", projects[i].image_url);
+        title.text(projects[i].title);
+        div.append(title);
+        div.append(image);
+        $(".projects").append(div);
+      }
+    });
+  </script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     
-
-    <!-- Portfolio Grid Section -->
-    
-
-    <!-- About Section -->
-   
-
-    <!-- Contact Section -->
-
-
-    <!-- Footer -->
+  </script>
 
 </body>
 
